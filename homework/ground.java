@@ -4,12 +4,16 @@ ground.java
 
 this program prints the area of a ground
 */
+import java.util.Scanner;
 public class ground{
-  public static void main(String[]args ){
-    double a=25, b=10, c=15;
-    double areaOftriangle=((a-c)*b)/2;
-    double areaOfrectangle=b*c;
-    double totalArea=areaOftriangle+areaOfrectangle;
-    System.out.println("the total area is ="+totalArea);
+  public static void main(String args []){
+     int height;
+     int Base;
+    System.out.println("Go to enter the height");
+     Scanner A = new Scanner (System.in);
+      height = A.nextInt();
+      System.out.println("Go the next base");
+       Base = A.nextInt();
+     System.out.println( "Area of rectangle is "+(height*Base)/2);
   }//end void main
 }//end public class

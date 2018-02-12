@@ -4,11 +4,17 @@ rectangle.java
 
 this program prints the area of a rectangle
 */
-public class rectangle{
-  public static void main(String[] args){
-    double base=20;
-    double height=34;
-    double area =(height*base)/2;
-    System.out.println("the area of a triangle is = "+ area);
+import java.util.Scanner;
+
+ public class rectangle{
+  public static void main(String args []){
+     int height;
+     int Base;
+    System.out.println("enter the height");
+     Scanner A = new Scanner (System.in);
+      height = A.nextInt();
+      System.out.println("enther the base");
+       Base = A.nextInt();
+       System.out.println("Area del rectangulo es "+(height*Base));
   }//end void main
 }//end public class
