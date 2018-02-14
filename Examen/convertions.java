@@ -2,6 +2,7 @@
 pedro uriel de jesus cortez
 convertion.java
 this program convert bolivianos to dollars and vice versa
+ejercice 34
 ************************************************************/
 import javax.swing.*;
 public class convertions{
