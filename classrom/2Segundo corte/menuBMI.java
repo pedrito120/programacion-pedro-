@@ -10,7 +10,7 @@ import javax.swing.*;
      person=new BMIOOP();
   final int opcion;
      opcion=Integer.parseInt(JOptionPane.showInputDialog("1-Name\n 2-Age\n 3-weight\n 4-height\n 5-calculate BMI\n 6-evaluate BMI\n 7-exit\n"));
-while (opcion){
+
      if(opcion == 1){
        String name;
        name=JOptionPane.showInputDialog("enter the name");
@@ -40,7 +40,5 @@ while (opcion){
      }else if (opcion==7){
        JOptionPane.showMessageDialog(null, "adios");
      }
-     opcion.close(opcion == 7);
-   }
    }
  }
