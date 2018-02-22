@@ -9,8 +9,6 @@ public class BMIOOP{
   private String  name;
   private int age;
   private double weight,height;
-  private double KILOGRAM_PER_POUND=0.45359237;
-  private double METERS_PER_INCH=0.0254;
   //methods - actions
   public void setName(String name ){
     this.name=name;
@@ -38,9 +36,9 @@ public class BMIOOP{
     }
     //***********************************
     public double getBMI(){
-
-      double BMI=this.weight*KILOGRAM_PER_POUND/((this.height*METERS_PER_INCH)*(this.height*METERS_PER_INCH));
-      return Math.round((BMI*100)/100);
+      double meters=this.height/100;
+      double BMI=this.weight/(meters*meters);
+      return BMI;
 
     }
     public String getStatus(){
