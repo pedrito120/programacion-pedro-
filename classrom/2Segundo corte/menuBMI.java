@@ -6,11 +6,13 @@
 import javax.swing.*;
  public class menuBMI{
    public static void main(String[] args){
+do{
      BMIOOP person;
-     person=new BMIOOP();
-  final int opcion;
 
-     opcion=Integer.parseInt(JOptionPane.showInputDialog("1-Name\n 2-Age\n 3-weight\n 4-height\n 5-calculate BMI\n 6-evaluate BMI\n 7-exit\n"));
+     person=new BMIOOP();
+
+  final int opcion;
+     opcion=Integer.parseInt(JOptionPane.showInputDialog("1-Name\n 2-Age\n 3-weight \n 4-height\n 5-calculate BMI\n 6-evaluate BMI\n 7-exit\n"));
      if(opcion == 1){
        String name;
        name=JOptionPane.showInputDialog("enter the name");
@@ -36,11 +38,10 @@ import javax.swing.*;
       JOptionPane.showMessageDialog(null, person.getBMI());
      }else if (opcion == 6){
        JOptionPane.showMessageDialog(null, person.getStatus());
-     }else if(opcion==7){
-       JOptionPane.showMessageDialog(null, "adios");
      }
-   }
+   }while (opcion ==7){
 
+     JOptionPane.showMessageDialog(null, "adios");
+}
+}
      }
-
- 
