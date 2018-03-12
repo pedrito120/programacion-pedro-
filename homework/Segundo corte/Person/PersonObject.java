@@ -2,16 +2,6 @@ import javax.swing.*;
 public class PersonObject{
   public static void main(String[] args) {
    Person person=new Person();
-   String name=JOptionPane.showInputDialog("enter the name");
-   person.setName(name);
-   double age=Double.parseDouble(JOptionPane.showInputDialog("enter the age"));
-   person.setAge(age);
-   String gender=JOptionPane.showInputDialog("enter the gender");
-   person.setGender(gender);
-   double height=Double.parseDouble(JOptionPane.showInputDialog("enter the height"));
-   person.setHeight(height);
-   double weigth=Double.parseDouble(JOptionPane.showInputDialog("enter the weight"));
-   person.setWeigth(weigth);
    JOptionPane.showMessageDialog(null,"the name is "+person.getName()+"\n the age is "+person.getAge()+"\n the gender is "+person.getGender()+"\n "+person.getDNI()+"\n the BMI is:"+person.getStatusBMI()+"\n"+person.getGen());
 
    Person person2=new Person();

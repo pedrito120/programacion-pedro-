@@ -6,11 +6,11 @@ public class Person{
   private String gender;
   private double height,weigth;
 public Person(){
-  this.name="";
-  this.age=0;
+  this.name="pedro";
+  this.age=19;
   this.gender="hombre";
-  this.height=0;
-  this.weigth=0;
+  this.height=172;
+  this.weigth=84;
 }
 public Person(String name,int age,String gender){
   this.name=name;
